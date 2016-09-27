@@ -1,0 +1,727 @@
+
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Highland Park - Programming Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+ @import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono|Source+Code+Pro';
+  body {
+      font: 400 15px 'Share Tech Mono', monospace;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+  /*======Edits*/
+  .logo{
+  	color:#882a1c;
+
+  }
+  .jumbotron{
+    background-color:#7c2722;
+    font-family: 'Source Code Pro', monospace;
+  }
+  ol.panel-body{
+    list-style: none;
+
+  }
+  /*Under here does specific css */
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="images/owlsLogo.png" height="100" width="100" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Info</a></li>
+        <li><a href="#services">Sign Up</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#pricing">Current Members</a></li>
+        <li><a href="#contact">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Highland Park Programming Club</h1>
+  <p><q><i> Creating the future One step at a time </i></q></p>
+  <form class="form-inline">
+    <!--<input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-danger">Sign Up!</button>-->
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Why Join?</h2><br>
+      <h4>For many technologies is a passion and for most its a thing that always around us interacting with our life one way or another. It is essential and greatly beneficial to have a basic understanding of how many of the applications that you use works!</h4>
+      <br>
+      <p></p> <br>
+      <button class="btn btn-danger btn-lg">Sign up!</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our goals!</h2><br>
+      <h4><strong>Full-Stack Developers</strong> Hopefully after a year of being with the programming club you will be ever much closer to being a Full-stack developer.</h4><br>
+      <p><strong>Power In Numbers</strong> One great thing about having a club is the exchange of each others code where programmers can use there different abilitys to create something that they can all be proud about. Something fullfilling!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>ALL LANGAUGES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span><img src="images/html5.png" alt="HTML5"/></span>
+      <h4>Level: <small>Intro</small> </h4>
+      <p>~ This the buidling block of the internet!</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/css3.png" height="128" width="128" alt="CSS3" /></span>
+      <h4>Level: <small>Intro</small></h4>
+      <p>~ This is what makes HTML look nice!</p>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/javascript.svg" height="128" width="128" /></span>
+      <h4>Level: <small>Begginer</small></h4>
+      <p>This is what adds basic functionality to the internet!</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span><img src="images/java.png" height="128" width="128" alt="JAVA" /></span>
+      <h4>Level: <small>Begginer</small></h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+      <aside>Ex: Minecraft</aside>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/jquery.png" style="max-height:200px;max-width:200px;" height="auto" width="auto" alt="JQUERY" /></span>
+      <h4>Level : <small>Begginer</small></h4>
+      <p>This shortens Javascript using Events</p>
+      <aside>" Do more with less "</aside>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/php.svg" height="100" width="128" alt="PHP" /></span>
+      <h4 style="color:#303030;">Level: <small>Intermediate</small></h4>
+      <p>This is what holds data!</p>
+      <aside>Ex: Facebook</aside>
+    </div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span><img src="images/python.jpg" width="128" hieght="128" alt="PYTHON3"/></span>
+      <h4>Level: <small>Intermediate</small> </h4>
+      <p>~ Programming Languages used for lots of things!</p>
+      <aside>Ex: Animation, Web , Apps </aside>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/ruby.png" height="128" width="128" alt="Ruby-Gems" /></span>
+      <h4>Level: <small>Begginer</small></h4>
+      <p>~ Simple Clean Programming Language</p>
+      <aside>Ex: Apps, Websites</aside>
+    </div>
+    <div class="col-sm-4">
+      <span><img src="images/rubyOnrails.png" height="128" width="128" alt="RubyOnRails" /></span>
+      <h4>Level: <small>Intermediate</small></h4>
+      <p>This is used to build Applications</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>PROJECTS</h2><br>
+  <h4>What you <b>CAN</b> be creating!</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/webBuild.png" alt="Web-building" width="400" height="300">
+        <p><strong>Websites</strong></p>
+        <p>Websites were working on!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/gameBuild.jpg" alt="Game-Buidling" width="400" height="300">
+        <p><strong>Games</strong></p>
+        <p>The games were working on!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="images/appBuild.jpg" alt="App-buidling" width="400" height="300">
+        <p><strong>Applications</strong></p>
+        <p>The applications were working on!</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"They have the dankest of the me-me's"<br><span style="font-style:normal;">Scarce</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Gimme dat Money"<br><span style="font-style:normal;">Lord Gaben</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Hello world?"<br><span style="font-style:normal;">1 dumb tradition</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container holding Members Pofiles -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Current Members</h2>
+    <h4>And a little about them</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Marcelo Escalante</h1>
+          <h3>Overlord of Programming club</h3>
+        </div>
+        <div class="panel-body">
+        <h3>'Bout me</h3>
+          <p>
+            <ol class="panel-body">
+              <li>Instigater of things</li>
+              <li>Movie Fnactic</li>
+              <li>Food is yummy</li>
+              <li></li>
+            </ol>
+          </p>
+        </div>
+        <div class="panel-footer">
+        <h3>Out of School</h3>
+          <h2>Leader Of programming Club</h2>
+          <h3>Steam: Hitman</h3>
+          <a href="http://www.twistedsatuma.com/"><button class="btn btn-lg">Personal Website</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Eric Yang</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Jacob Passirello</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Something about you?
+          </p>
+          
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Solo Page</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Niko</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Ben Dietz</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Myles Herzog</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Alex Weiner-Goldberg</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Sean</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Niko</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+     <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Deb</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+     <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Sam Kovac</h1>
+          <h3></h3>
+        </div>
+        <div class="panel-body">
+          <p>
+            Una cosa de tu?
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg">Persons Page</button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <h1 class="text-center lead">You Could Be Next!</h1>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+
+        <form action="home.php" method="POST">
+  <div class="row">
+    <div class="col-sm-5">
+      <p>If your interested in joining ask me or email me!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Highland Park, NJ</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 732 213 6509</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> twistedsatsuma@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+window.alert("This site is being contructed, I encourage all to sign up!")
+var myCenter = new google.maps.LatLng(40.4959379,-74.42431779999998);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:14,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Powered By: <a href="http://www.twistedsatuma.com/" target="_blank">Harshmellow</a></p>
+  <h3>Last edit: 9/20/16</h3>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
