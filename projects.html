@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--Disables zoom and ensures only scrolling w/ responsiveness-->
+<meta charset="utf-8">
+<head>
+	<title>HPCODE-Projects</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style type="text/css">
+body{overflow-x: hidden;}
+	
+	.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  div.current img{
+    max-width:128px;
+    max-width: 128px;
+    height:auto;
+    width: auto;
+    display: block;
+    margin:0 auto;
+    padding: 25px 0px;
+  }
+  ol.current-projects{
+    text-align: center;
+    list-style: none;
+    border-width: 5px;
+    box-sizing: content-box;
+   border-image: url('images/warning.svg') 30 round ;
+   border-style: solid;
+   margin: 0 auto;
+   padding: 10px 0px;
+   height:100%;
+   width:33%;
+
+
+  }
+  ol.current-projects li{
+    display:inline;
+  }
+  p.project-text{visibility: hidden;}
+  .logos{
+    background-color: #fafafa;
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('')
+  }); 
+
+</script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="page-header">
+      <h1><img src="images/hptech3.png"><small style="padding:0 0 0 20px">PROJECTS</small></h1>
+    </div>
+    <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="home.html">Home</a></li>
+      <li class="#active">Projects</li>
+      <li><a href="#">Past</a></li>
+      <li><a href="#current">Current</a></li>
+      <li><a href="#">Future</a></li>
+    </ol>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center logos">
+    <div class="row">
+        <a name="current"></a>
+        <div class="current slide" name="current">
+            <div>
+            <img src="images/hptech.png">
+            <label>HP Logo 1</label>
+            </div>
+            <div>
+            <img src="images/hptech2.png"> 
+            <label>HP Logo 2</label>
+            </div>
+            <div>
+            <img src="images/hptech3.png">
+            <label>HP Logo 3</label>
+            </div>
+        </div>
+        <div class="row">
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYwJ5Ig-osSKtPtWdGvobRWlVDS894R5pUGiMAva-FDRisXQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="panel-header">
+          <h1>Current Projects</h1>
+        </div>
+        <ol class="current-projects">
+          <li class="project-date">9/27/16</li>
+          <p class="project-text">
+            
+          </p>
+        </ol>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--JQUERY CDN LINK-->
+<!--BOOTSRAP JSCRIPTED MINIFIED FILE-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
