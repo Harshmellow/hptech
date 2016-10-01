@@ -4,7 +4,13 @@
 <head>
   <title>HPCODE - Home</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Home of the Highland Park Owls Programming Club where we strive to make the next best thing. Anyone can join no matter how tech savy you are, hope to see ya! " />
+  <meta name="robots" content="Highland,hpcode,programming,highschool,Harshmellow" /> <!--Robot.txt Indexing-->
+  <meta name="googlebot" content="Highland,hpcode,programming,highschool,Harshmellow" /> <!--Google SEO indexing-->
+  <meta name="google" content="Contact Us at: twistedsatuma@gmail.com" /> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -22,15 +28,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="images/hptech3.png" height="auto" width="auto" /></a>
+      <a class="navbar-brand" href="#myPage"><img src="images/logos/logoBlack.png" height="auto" width="auto" id="logo"/></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">Info</a></li>
         <li><a href="#services">Sign Up</a></li>
-        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#portfolio">Subjects</a></li>
         <li><a href="#pricing">Current Members</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="playground.html">Playground</a></li>
       </ul>
     </div>
   </div>
@@ -53,7 +60,7 @@
       <h4>For many technologies is a passion and for most its a thing that always around us interacting with our life one way or another. It is essential and greatly beneficial to have a basic understanding of how many of the applications that you use works!</h4>
       <br>
       <p></p> <br>
-      <button class="btn btn-danger btn-lg">Sign up!</button>
+      
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -81,7 +88,7 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span><img src="images/html5.png" alt="HTML5"/></span>
+      <span><img src="images/html5.png" alt="HTML5" /></span>
       <h4>Level: <small>Intro</small> </h4>
       <p>~ This the buidling block of the internet!</p>
     </div>
@@ -91,7 +98,7 @@
       <p>~ This is what makes HTML look nice!</p>
     </div>
     <div class="col-sm-4">
-      <span><img src="images/javascript.svg" height="128" width="128" /></span>
+      <span><img src="images/javascript.svg" height="128" width="128" alt="Javascript"/></span>
       <h4>Level: <small>Begginer</small></h4>
       <p>This is what adds basic functionality to the internet!</p>
     </div>
@@ -101,7 +108,7 @@
     <div class="col-sm-4">
       <span><img src="images/java.png" height="128" width="128" alt="JAVA" /></span>
       <h4>Level: <small>Begginer</small></h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <p>A language with a strong Base</p>
       <aside>Ex: Minecraft</aside>
     </div>
     <div class="col-sm-4">
@@ -119,23 +126,39 @@
   </div>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span><img src="images/python.jpg" width="128" hieght="128" alt="PYTHON3"/></span>
+      <span><img src="images/python.jpg" width="128" hieght="128" alt="PYTHON3" class="logoChoice" /></span>
       <h4>Level: <small>Intermediate</small> </h4>
       <p>~ Programming Languages used for lots of things!</p>
       <aside>Ex: Animation, Web , Apps </aside>
     </div>
     <div class="col-sm-4">
-      <span><img src="images/ruby.png" height="128" width="128" alt="Ruby-Gems" /></span>
+      <span><img src="images/ruby.png" height="128" width="128" alt="Ruby-Gems" class="logoChoice"/></span>
       <h4>Level: <small>Begginer</small></h4>
       <p>~ Simple Clean Programming Language</p>
       <aside>Ex: Apps, Websites</aside>
     </div>
     <div class="col-sm-4">
-      <span><img src="images/rubyOnrails.png" height="128" width="128" alt="RubyOnRails" /></span>
+      <span><img src="images/rubyOnrails.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
       <h4>Level: <small>Intermediate</small></h4>
       <p>This is used to build Applications</p>
     </div>
-  </div>
+    <!-- BUG REPORT DONT KNOW HOW TO GET THIS DIV TAG TO LIGN UP WITH THE OTHER IMAGES, MUCH APPREACIATED IF YOU CAN SORT THIS OUT :)-->
+    <div class="col-sm-4">
+      <span><img src="images/c++.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
+      <h4>Level: <small>Mastery</small></h4>
+      <p>All versions of Windows Run this</p>
+    </div>
+     <div class="col-sm-4">
+      <span><img src="images/mysql.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
+      <h4>Level: <small>Mastery</small></h4>
+      <p>The database that holds Passwords and Info to span the world</p>
+    </div>
+     <div class="col-sm-4" style="padding:40px 0 0 0;" >
+      <span><img src="images/angular.png" height="128" width="128" alt="RubyOnRails" class="logoChoice"  /></span>
+      <h4>Level: <small>Mastery</small></h4>
+      <p>Framework that builds the next big App</p>
+    </div>
+    </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
@@ -166,7 +189,7 @@
     </div>
   </div><br>
   
-  <h2>What our customers say</h2>
+  <h2>What our Members Say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -178,10 +201,10 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"They have the dankest of the me-me's"<br><span style="font-style:normal;">Scarce</span></h4>
+        <h4>"Want to join the tech Industry when you grow up, Why wait for college join us Now and learn the tools you'll need to be succesful today!"<br><span style="font-style:normal;">- Wise Man</span></h4>
       </div>
       <div class="item">
-        <h4>"Gimme dat Money"<br><span style="font-style:normal;">Lord Gaben</span></h4>
+        <h4>"Accelerated Learning of Computer Science And Technology"<br><span style="font-style:normal;"></span></h4>
       </div>
       <div class="item">
         <h4>"Hello world?"<br><span style="font-style:normal;">1 dumb tradition</span></h4>
@@ -214,20 +237,23 @@
           <h3>Overlord of Programming club</h3>
         </div>
         <div class="panel-body">
-        <h3>'Bout me</h3>
+        <h3>Programming CV</h3>
           <p>
-            <ol class="panel-body">
-              <li>Instigater of things</li>
-              <li>Movie Fnactic</li>
-              <li>Food is yummy</li>
-              <li></li>
+            <ol class="panel-body" style="list-style-type:hebrew;list-style-position: inside;">
+              <li>HTML5/CSS3</li>
+              <li>Javascript/Typescript/Jquery</li>
+              <li>Boostrap</li>
+              <li>Python3</li>
+              <li>Angular 2</li>
+              <li><del>Java</del></li>
             </ol>
           </p>
         </div>
         <div class="panel-footer">
-        <h3>Out of School</h3>
-          <h2>Leader Of programming Club</h2>
-          <h3>Steam: Hitman</h3>
+        <h3 class="panel-heading">Out of School</h3>
+          <h2><a href="http://blog.twistedsatuma.com" target="_blank">Blog</a></h2>
+          <h3>Steam: Hitman <img src="https://pbs.twimg.com/profile_images/612281253/Picture_2.png" height="40" width="40" alt="Seananner Cat" /></h3>
+          <h3><a href="https://github.com/Harshmellow/hptech" target="_blank"><img src="images/github.png" height="60" width="60" alt="Github" /></a></h3>
           <a href="http://www.twistedsatuma.com/"><button class="btn btn-lg">Personal Website</button></a>
         </div>
       </div>
@@ -450,11 +476,11 @@
 </div>
 
 <div id="googleMap" style="height:400px;width:100%;"></div>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSfz1o9mzTFkowE7U0SwBLFvzxIRBq-3g&callback=initMap"
+  type="text/javascript"></script>
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
-window.alert("This site is being contructed, I encourage all to sign up!")
 var myCenter = new google.maps.LatLng(40.4959379,-74.42431779999998);
 
 function initialize() {
@@ -482,8 +508,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Powered By: <a href="http://www.twistedsatuma.com/" target="_blank">Harshmellow</a></p>
-  <h3>Last edit: 9/27/16</h3>
+  <p>Powered By: <a href="http://www.twistedsatuma.com/" target="_blank">HPCODE &amp; <small>Harshmellow</small></a></p>
+  <h3>Last edit: 9/30/16</h3>
 </footer>
 
 <script>
@@ -522,7 +548,7 @@ $(document).ready(function(){
   });
 })
 </script>
-
+<script type="text/javascript" src="home.js"></script>
 </body>
 </html>
 
