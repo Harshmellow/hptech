@@ -9,97 +9,19 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script type="text/javascript" src="home.js"></script>
 <style type="text/css">
 body{overflow-x: hidden;}
-	
-	.slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  div.current img{
-    max-width:128px;
-    max-width: 128px;
-    height:auto;
-    width: auto;
-    display: block;
-    margin:0 auto;
-    padding: 25px 0px;
-  }
-  ol.current-projects{
-    text-align: center;
-    list-style: none;
-    border-width: 5px;
-    box-sizing: content-box;
-   border-image: url('images/warning.svg') 30 round ;
-   border-style: solid;
-   margin: 0 auto;
-   padding: 10px 0px;
-   height:100%;
-   width:33%;
-
-
-  }
-  ol.current-projects li{
-    display:inline;
-  }
-  p.project-text{visibility: hidden;}
-  .logos{
-    background-color: #fafafa;
-  }
+	  
 </style>
-<script type="text/javascript">
-  $(document).ready(function(){
-	$('#logo').click(function(){
-		$(this).fadeOut('slow');
-	});  
-  });
-
-</script>
-</head>
+</head> 
 <body>
 <div class="container-fluid">
   <div class="row text-center">
     <div class="page-header">
-      <h1><img id="logo" src="images/hptech3.png"><small style="padding:0 0 0 20px">PROJECTS</small></h1>
+      <h1><img id="title-logo" src="images/logos/hptech3.png"><small style="padding:0 0 0 20px">PROJECTS</small></h1>
     </div>
     <div class="row">
     <ol class="breadcrumb">
@@ -112,40 +34,59 @@ body{overflow-x: hidden;}
     </div>
   </div>
 </div>
-
+<h3 style="text-align:center;">Our Github<br><a href="https://github.com/Harshmellow/hptech" target="_blank"><img src="images/github.png" /></a></h3>
 <div class="container-fluid text-center logos">
     <div class="row">
         <a name="current"></a>
         <div class="current slide" name="current">
             <div>
-            <img src="images/hptech.png">
+            <img src="images/logos/hptech.png" class="logoDrag" />
             <label>HP Logo 1</label>
             </div>
             <div>
-            <img src="images/hptech2.png"> 
+            <img src="images/logos/hptech2.png" class="logoDrag"/> 
             <label>HP Logo 2</label>
             </div>
             <div>
-            <img src="images/hptech3.png">
+            <img src="images/logos/hptech3.png" class="logoDrag"/>
             <label>HP Logo 3</label>
             </div>
         </div>
         <div class="row">
-           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYwJ5Ig-osSKtPtWdGvobRWlVDS894R5pUGiMAva-FDRisXQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe34PSEICGHjpKwqk4Knz6OpfkZhEtbs7mA8DrNBsdIWDjT2w/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
     </div>
     <br>
+    <!-- Under goes accordain that tells user what we do!!-->
+    <!--
     <div class="row">
-        <div class="panel-header">
-          <h1>Current Projects</h1>
-        </div>
-        <ol class="current-projects">
-          <li class="project-date">9/27/16</li>
-          <p class="project-text">
-            
-          </p>
-        </ol>
-    </div>
+        <div id="accordion">
+           <div class="group">
+             <h3>Current Projects</h3>
+             <div>
+               <p>We are currently starting basic web development starting with building the club website. Slowly developing basic understanding of code indetation and are on track to move to Interactive and responsive Code development</p>
+             </div>
+           </div>
+           <div class="group">
+             <h3>Non-Greenlight projects</h3>
+             <div>
+               <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+             </div>
+           </div>
+           <div class="group">
+             <h3>In the Future</h3>
+             <div>
+               <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+               <ul>
+                 <li>List item one</li>
+                 <li>List item two</li>
+                 <li>List item three</li>
+               </ul>
+             </div>
+           </div>
+          </div>
+        
+    </div>-->
 </div>
 
 
