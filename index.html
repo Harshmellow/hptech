@@ -5,19 +5,36 @@
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="index.css">
 			<link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
-			<nav>
-				<div id="heck">
-				<table id="official">
-					<tr>
-						<td>Hi</td>
-						<td>Hello</td>
-						<td>Yes</td>
-					</tr>
-				</table>
-				</div>
-			</nav>
+			
+			<!--This is an attempt at a navbar. I advise that you only use tables when needing to display data instead use lists
+			for this application there much more effective-->
+		<style>
+			ol.navbar{
+				display:block;
+				width:100%;
+				background-color:#ddd;
+			}
+			/*Selects the lists children of li & tells them to stack next to each other or inline*/
+			ol.navbar li{
+				display:inline-block;
+				padding:0 7px;
+				color:#fff;
+				
+			
+			}
+			
+		</style>
 		</head>
 		<body class="legit">
+			<div id="heck">
+				<nav>
+					<!--You can just copy and paste the style and put it into your .css file-->
+					<ol class="navbar" style="display:block;width:100%;background-color:#ddd;">
+						<a href=""><li>Hello</li></a><a href=""><li>Another webpage</li></a>
+					</ol>
+				</nav>
+			</div>
+			
 			<div class="body">
 				<h1> Hello! This is mostly html fun. </h1>
 				<p>
