@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HPCODE - Home</title>
+  <title>HPCODERS - Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="google-site-verification" content="hhvi_bvYpu1LjQYptH4S-0s7AWwTKv54v7XR2_klKLM" />
   <meta name="description" content="Home of the Highland Park Owls Programming Club where we strive to make the next best thing. Anyone can join no matter how tech savy you are, hope to see ya! " />
-  <meta name="robots" content="Highland,hpcode,programming,highschool,Harshmellow" /> <!--Robot.txt Indexing-->
-  <meta name="googlebot" content="Highland,hpcode,programming,highschool,Harshmellow" /> <!--Google SEO indexing-->
+  <meta name="robots" content="Highland,hpcode,programming,highschool,Harshmellow,hpcoders,highlandpark" /> <!--Robot.txt Indexing-->
+  <meta name="googlebot" content="Highland,hpcode,programming,highschool,Harshmellow,hpcoders,highlandpark" /> <!--Google SEO indexing-->
   <meta name="google" content="Contact Us at: twistedsatuma@gmail.com" /> 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -17,10 +19,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="home.css">
+<style type="text/css">
+  div.panel-body ol{
+    list-style: hebrew;
+    list-style-position: inside;
+
+  }
+  span.link{
+    color: #9AE927;
+    text-decoration: none;
+
+  }
+  a{
+    text-decoration: none !important;
+  }
+
+  h3.CV{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+  }
+</style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#ECA521;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -28,7 +51,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="images/logos/logoBlack.png" height="auto" width="auto" id="logo"/></a>
+      <a class="navbar-brand" href="#myPage"><img src="images/logos/logoBlack.png" height="auto" width="auto" id="logo" alt="HpCOdeLogo" /></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -57,7 +80,7 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>Why Join?</h2><br>
-      <h4>Technology Is all around us constantly and Having the ability to understand and build with programming is a skill that is invaluable in the present day. Aside from the  t||For many technologies is a passion and for most its a thing that always around us interacting with our life one way or another. It is essential and greatly beneficial to have a basic understanding of how many of the applications that you use works!</h4>
+      <h4>Technology Is all around us constantly and Having the ability to understand and build with programming is a skill that is invaluable in the present day. For many technologies is a passion and for most its a thing that always around us interacting with our life one way or another. It is essential and greatly beneficial to have a basic understanding of how many of the applications that you use works!</h4>
       <br>
       <p></p> <br>
       
@@ -79,7 +102,7 @@
       <p><strong>Power In Numbers</strong> One great thing about having a Club to share code is the ability to have an envoirment where other promgrammers can teach/learn from each other. Sometimes even solving challenging problems as they would in compaines such as GOOGLE/IBM/Facebook/Ext..</p>
       <h1>It Pays to Code</h1>
       <hr>
-      <h2><i>The First step to these carrers is learning the basic of programming!</i></h2>
+      <h2><i>The First step to these carrers is learning the basics of programming!</i></h2>
       <a href="http://www.codingdojo.com/blog/web-developer-salaries-2016/" target="_blank">Salaries in Web development</a><br><a href="http://www.payscale.com/research/US/Job=Software_Engineer/Salary">Salaries in Software Engineering</a>
     </div>
   </div>
@@ -92,9 +115,11 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span><img src="images/html5.png" alt="HTML5" /></span>
+      <span><a href="Learn/web_design.html"><img src="images/html5.png" alt="HTML5" /></a></span>
       <h4>Level: <small>Intro</small> </h4>
-      <p>~ This the buidling block of the internet!</p>
+      <button style="background-color:#7c2722;" class="btn-lg .btn-primary"><a href="Learn/web_design.html"><span style="color: #fff !important;">Learn HTML</a></button>
+      <br>
+      <p>~ This is the Buidling block of the Internet</p>
     </div>
     <div class="col-sm-4">
       <span><img src="images/css3.png" height="128" width="128" alt="CSS3" /></span>
@@ -104,7 +129,7 @@
     <div class="col-sm-4">
       <span><img src="images/javascript.svg" height="128" width="128" alt="Javascript"/></span>
       <h4>Level: <small>Begginer</small></h4>
-      <p>This is what adds basic functionality to the internet!</p>
+      <p>~ This is what adds basic functionality to the internet!</p>
     </div>
   </div>
   <br><br>
@@ -128,40 +153,42 @@
       <aside>Ex: Facebook</aside>
     </div>
   </div>
+  <!--Second Section to Language slide-Holder-->
   <div class="row slideanim">
-    <div class="col-sm-4">
-      <span><img src="images/python.jpg" width="128" hieght="128" alt="PYTHON3" class="logoChoice" /></span>
-      <h4>Level: <small>Intermediate</small> </h4>
-      <p>~ Programming Languages used for lots of things!</p>
-      <aside>Ex: Animation, Web , Apps </aside>
+      <div class="col-sm-4">
+        <span><img src="images/python.jpg" width="128" hieght="128" alt="PYTHON3" class="logoChoice" /></span>
+        <h4>Level: <small>Intermediate</small> </h4>
+        <p>~ Programming Languages used for lots of things!</p>
+        <aside>Ex: Animation, Web , Apps </aside>
+      </div>
+      <div class="col-sm-4">
+        <span><img src="images/ruby.png" height="128" width="128" alt="RubyGems" class="logoChoice"/></span>
+        <h4>Level: <small>Begginer</small></h4>
+        <p>~ Simple Clean Programming Language</p>
+        <aside>Ex: Apps, Websites</aside>
+      </div>
+      <div class="col-sm-4">
+        <span><img src="images/rubyOnrails.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
+        <h4>Level: <small>Intermediate</small></h4>
+        <p>This is used to build Applications</p>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <span><img src="images/ruby.png" height="128" width="128" alt="Ruby-Gems" class="logoChoice"/></span>
-      <h4>Level: <small>Begginer</small></h4>
-      <p>~ Simple Clean Programming Language</p>
-      <aside>Ex: Apps, Websites</aside>
-    </div>
-    <div class="col-sm-4">
-      <span><img src="images/rubyOnrails.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
-      <h4>Level: <small>Intermediate</small></h4>
-      <p>This is used to build Applications</p>
-    </div>
-    <!-- BUG REPORT DONT KNOW HOW TO GET THIS DIV TAG TO LIGN UP WITH THE OTHER IMAGES, MUCH APPREACIATED IF YOU CAN SORT THIS OUT :)-->
-    <div class="col-sm-4">
-      <span><img src="images/c++.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
-      <h4>Level: <small>Mastery</small></h4>
-      <p>All versions of Windows Run this</p>
-    </div>
-     <div class="col-sm-4">
-      <span><img src="images/mysql.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
-      <h4>Level: <small>Mastery</small></h4>
-      <p>The database that holds Passwords and Info to span the world</p>
-    </div>
-     <div class="col-sm-4" style="padding:40px 0 0 0;" >
-      <span><img src="images/angular.png" height="128" width="128" alt="RubyOnRails" class="logoChoice"  /></span>
-      <h4>Level: <small>Mastery</small></h4>
-      <p>Framework that builds the next big App</p>
-    </div>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span><img src="images/c++.png" height="128" width="128" alt="RubyOnRails" class="logoChoice" /></span>
+        <h4>Level: <small>Mastery</small></h4>
+        <p>All versions of Windows Run this</p>
+      </div>
+       <div class="col-sm-4">
+        <span><img src="images/mysql.png" height="128" width="128" alt="MySql" class="logoChoice" /></span>
+        <h4>Level: <small>Mastery</small></h4>
+        <p>The database that holds Passwords and Info to span the world</p>
+      </div>
+       <div class="col-sm-4" style="padding:40px 0 0 0;" >
+        <span><img src="images/angular.png" height="128" width="128" alt="Angular" class="logoChoice"  /></span>
+        <h4>Level: <small>Mastery</small></h4>
+        <p>Framework that builds the next big App</p>
+      </div>
     </div>
 </div>
 
@@ -172,28 +199,28 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/webBuild.png" alt="Web-building" width="400" height="300">
+        <img src="images/webBuild.png" alt="Webbuilding" width="400" height="300">
         <p><strong>Websites</strong></p>
         <p>Websites were working on!</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/gameBuild.jpg" alt="Game-Buidling" width="400" height="300">
+        <img src="images/gameBuild.jpg" alt="GameBuidling" width="400" height="300">
         <p><strong>Games</strong></p>
         <p>The games were working on!</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/appBuild.jpg" alt="App-buidling" width="400" height="300">
+        <img src="images/appBuild.jpg" alt="Appbuidling" width="400" height="300">
         <p><strong>Applications</strong></p>
         <p>The applications were working on!</p>
       </div>
     </div>
   </div><br>
+  </div>
   
-  <h2>What our Members Say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -201,17 +228,17 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
+    <h2 class="text-center">Reason's to Become a Member</h2>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"Want to join the tech Industry when you grow up, Why wait for college join us Now and learn the tools you'll need to be succesful today!"<br><span style="font-style:normal;">- Wise Man</span></h4>
+        <h4>"Why wait for college to pay money to learn something you can learn at a relaxed rate today, with your fellow peers!"<br><span style="font-style:normal;"></span></h4>
       </div>
       <div class="item">
         <h4>"Accelerated Learning of Computer Science And Technology"<br><span style="font-style:normal;"></span></h4>
       </div>
       <div class="item">
-        <h4>"Why wait for college to pay money to learn something you can learn at a relaxed rate today, with your fellow peers!"<br><span style="font-style:normal;"></span></h4>
+        <h4>"Want to join the tech Industry when you grow up, Why wait for college join us Now and learn the tools you'll need to be succesful today!"<br><span style="font-style:normal;"></span></h4>
       </div>
     </div>
 
@@ -230,7 +257,7 @@
 <!-- Container holding Members Pofiles -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
-    <h2>Current Members</h2>
+    <h2 style="font-size: 50px;">Current Members</h2>
     <h4>And a little about them</h4>
   </div>
   <div class="row slideanim">
@@ -241,42 +268,54 @@
           <h3>Overlord of Programming club</h3>
         </div>
         <div class="panel-body">
-        <h3>Programming CV</h3>
-          <p>
+        <h3 class="CV">Programming CV</h3>
+         
             <ol class="panel-body" style="list-style-type:hebrew;list-style-position: inside;">
+              <h4><b><u>FrontEnd</u></b></h4>
               <li>HTML5/CSS3</li>
               <li>Javascript/Typescript/Jquery</li>
-              <li>Boostrap</li>
+              <li>Boostrap Frameworks</li>
+              <h4><u><b>BackEnd</b></u></h4>
               <li>Python3</li>
               <li>Angular 2</li>
-              <li><del>Java</del></li>
+              <li>PHP <small>*learning</small></li>
+              <li>Java <small>*Learning</small></li>
+              <li>Ruby &amp; RubyOnRails</li>
+              <h4><u><b>DataBasing</b></u></h4>
+              <li>MySql <small>*Handling Queries</small></li>
+              <h4><u>Other</u></h4>
+              <li>Lighting/Rendering in Maya</li>
+              <li>AWS/E3/ROUTE53</li>
             </ol>
-          </p>
-        </div>
+         </div>
         <div class="panel-footer">
-        <h3 class="panel-heading">Out of School</h3>
-          <h2><a href="http://blog.twistedsatuma.com" target="_blank">Blog</a></h2>
-          <h3>Steam: Hitman <img src="https://pbs.twimg.com/profile_images/612281253/Picture_2.png" height="40" width="40" alt="Seananner Cat" /></h3>
-          <h3><a href="https://github.com/Harshmellow/hptech" target="_blank"><img src="images/github.png" height="60" width="60" alt="Github" /></a></h3>
-          <a href="http://www.twistedsatuma.com/"><button class="btn btn-lg">Personal Website</button></a>
+          <h3>Experiance</h3>
+          <p>SummerOfCode 2015 by Google <br><small>Org: RedCross | Proj:MalariaSim</small></p>
+          <p>OpenSource Dev <a href="https://github.com/angular/material2">Angular 2.0</a> <small>Alpha</small></p>
+          <a href="http://www.harshmelow.com/" target="_blank"><button class="btn btn-lg">About Them</button></a>
         </div>
       </div>
     </div>
+    <!--Sepertor-->
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Eric Yang</h1>
+          <h3>Discord Manager</h3>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+            <h3 class="CV">Programming CV</h3>
+          <ol>
+            <li>HTML5/CSS3</li>
+            <li>Java</li>
+          </ol>
+
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <p></p>
-          <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <h4>Experiance</h4>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
@@ -285,36 +324,43 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Jacob Passirello</h1>
+          <h3>UI Designer</h3>
         </div>
         <div class="panel-body">
-          <p>
-            Something about you?
-          </p>
+        <ol>
+        <h3 class="CV">Programming CV</h3>
+          <li>Draw's Stuff</li>
+          <li>Expert on Everything</li>
+        </ol>
           
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <p></p>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Solo Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  <!--Sep-->
+<div class="row slideanim">
   <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Niko</h1>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+        <h3 class="CV">Programming CV</h3>
+         <ol>
+           <li>HTML5/CSS3</li>
+         </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
@@ -323,16 +369,20 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Ben Dietz</h1>
+          <h3>Admin</h3>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+        <h3 class="CV">Programming CV</h3>
+          <ol>
+            <li>HTML5/CSS3</li>
+            <li>Java</li>
+            <li>Javascript</li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
@@ -343,50 +393,36 @@
           <h1>Myles Herzog</h1>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+          <ol>
+          <h3 class="CV">Programming CV</h3>
+            <li>HTML5/CSS3</li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
+</div>
     <!--Seperate profiles-->
+<div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Alex Weiner-Goldberg</h1>
+          <h1>Sean Lee</h1>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+        <h3 class="CV">Programming CV</h3>
+          <ol>
+            <li>HTML5/CSS3</li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
-        </div>
-      </div>
-    </div>
-    <!--Seperate profiles-->
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Sean</h1>
-        </div>
-        <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
-        </div>
-        <div class="panel-footer">
-          <h3>What they do!</h3>
-          <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
@@ -397,14 +433,14 @@
           <h1>Niko</h1>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+          <ol>
+            <li>HTML5/CSS3</li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
@@ -413,20 +449,24 @@
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Deb</h1>
+          <h3>Hardware-Genie</h3>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+          <ol>
+            <li>HTML5/CSS3</li>
+            <li></li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
+</div>
     <!--Seperate profiles-->
+ <div class="row slideanim">
      <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -434,19 +474,111 @@
           <h3></h3>
         </div>
         <div class="panel-body">
-          <p>
-            Una cosa de tu?
-          </p>
+          <ol>
+            <li>HTML5/CSS3</li>
+          </ol>
         </div>
         <div class="panel-footer">
           <h3>What they do!</h3>
           <h4>Projects</h4>
-          <button class="btn btn-lg">Persons Page</button>
+          <button class="btn btn-lg">About Them</button>
         </div>
       </div>
     </div>
     <!--Seperate profiles-->
-    <h1 class="text-center lead">You Could Be Next!</h1>
+    <!--Seperate profiles-->
+     <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Kevin Marx</h1>
+          <h3>Server Admin</h3>
+        </div>
+        <div class="panel-body">
+           <ol>
+          <h3>Programming CV</h3>
+            <li>HTML5/CSS3</li>
+            <li>C++</li>
+            <li>Java</li>
+          </ol>
+        </div>
+        <div class="panel-footer">
+          <h3>What they do!</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg"><a href="http://kmarx.hpcoders.com/"><span class="link">About Them</span></a></button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Tianqi</h1>
+          <h3>Prince of the School</h3>
+        </div>
+        <div class="panel-body">
+           <ol>
+          <h3>Programming CV</h3>
+            <li>HTML5/CSS3</li>
+          </ol>
+        </div>
+        <div class="panel-footer">
+          <h3>Experiance</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg"><span class="link">About Them</span></button>
+        </div>
+      </div>
+    </div>
+</div>
+     <!--Seperate profiles-->
+ <div class="row slideanim">
+     <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Will Shuartz</h1>
+          <h3>RadioClub Ambassador</h3>
+        </div>
+        <div class="panel-body">
+           <ol>
+          <h3>Programming CV</h3>
+            <li>HTML5/CSS3</li>
+            <li>Audacity</li>
+          </ol>
+        </div>
+        <div class="panel-footer">
+          <h3>Experiance</h3>
+          <h4>Projects</h4>
+          <p>HPRadio Club</p>
+          <button class="btn btn-lg"><a href="http://kmarx.hpcoders.com/"><span class="link">About Them</span></a></button>
+        </div>
+      </div>
+    </div>
+    <!--Seperate profiles-->
+    <!--Seperate profiles-->
+     <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Apistole</h1>
+          <h3>Tech Innovator</h3>
+        </div>
+        <div class="panel-body">
+           <ol>
+          <h3>Programming CV</h3>
+            <li>HTML5/CSS3</li>
+            <li>Python3</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+          </ol>
+        </div>
+        <div class="panel-footer">
+          <h3>Experiance</h3>
+          <h4>Projects</h4>
+          <button class="btn btn-lg"><span class="link">About Them</span></button>
+        </div>
+      </div>
+    </div>
+</div>
+    <!--Seperate profiles-->
+
 </div>
 
 <!-- Container (Contact Section) -->
@@ -481,9 +613,9 @@
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<!--<div id="googleMap" style="height:400px;width:100%;"></div>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSfz1o9mzTFkowE7U0SwBLFvzxIRBq-3g&callback=initMap"
-  type="text/javascript"></script>
+  type="text/javascript"></script>-->
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
@@ -516,6 +648,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   </a>
   <p>Powered By: <a href="http://www.harshmelow.com/" target="_blank">Harshmelow &amp; <small>HPCODE</small></a></p>
   <h3>Last edit: 10/10/16</h3>
+  <h5><a href="https://github.com/Harshmellow/hptech/blob/master/home.html" target="_blank">Source Code</a></h5>
 </footer>
 
 <script>
