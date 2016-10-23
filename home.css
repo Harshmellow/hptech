@@ -36,7 +36,22 @@
       font: 400 15px 'Share Tech Mono', monospace;
       line-height: 1.8;
       color: #818181;
+      overflow-x: hidden;
   }
+  /*Styling for Member Classes*/
+  .panel-body,div.panel-footer{
+      background-color: #fafafa !important;
+  }
+  div#pricing .panel-heading{
+    background-color: #7c2722 !important;
+  }
+  .panel button{
+    background-color: #7c2722 !important;
+  }
+  div.panel{
+     border:solid #CCA804 thin !important;
+  }
+  /*End of member class Styling*/
   h2 {
       font-size: 24px;
       text-transform: uppercase;
@@ -116,7 +131,7 @@
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #f4511e !important;
+      background-color: #7c2722 !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
