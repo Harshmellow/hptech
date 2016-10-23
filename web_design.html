@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HPCODERS-HTML</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<style type="text/css">
+::selection{
+	color: #fff;
+	background-color:#a23;
+}
+body{
+	width:80%;
+	margin:0 auto;
+	background-color: darkcyan;
+	font-size: 18px;
+	line-height: 1.7em;
+	color:#fff;
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+}
+/*Styled for basic tags*/
+h1,h3,h2,p,h4,aside{
+	text-align: center;
+	padding: 1em 2em;
+	margin: 0 auto;
+
+}
+p{
+	font-size: 18px;
+}
+a{
+	color: #a23;
+}
+/*Styles for the navbar and spacing*/
+.navbar-title{border-bottom: solid 5px green;color:black;text-transform: uppercase;}
+.navbar-title{margin:0 0 20px 0;}
+/*Shortcut to escaping code , while teaching html within html*/
+.tag{
+	font-size:24px;
+	font-weight: normal;
+}
+.tag:before{
+	content: '<';
+}
+.tag:after{
+	content: '>';
+}
+ol,ul{text-align:center;list-style-position:inside;}
+
+.navbar{
+	width: 100%;
+	float: left;
+	height: auto;
+	text-align: left;
+	background-color: #51C299;
+}
+.content{
+	float: left;
+	width:25%;
+	padding:10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: left;
+
+}
+a:hover{
+	text-decoration: none;
+}
+#navbar-left li:hover{
+	background-color: #a23;
+	color: white;
+	transition: 1s;
+	text-decoration: none;
+}
+span.displays{
+	color: red;
+	font-weight: bold;
+	font-size: 24px;
+	 font-family: cursive;
+}
+div.displays{
+	 border:solid black 4px;
+	 border-radius: 8px;
+	 width: 100%;
+	 height:auto;
+	 background-color: #d4d4d4;
+}
+.displays ol, .displays ul{margin: 8px;}
+.displays:after{
+	content: ':';
+}
+.tagIntro{
+	font-size: 40px;
+	text-align: center;
+	font-family: fantasy;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target="start">
+<div class="content">
+<div class="navbar">
+<!--Navbar floats left to guide user-->
+<a href="http://www.hpcoders.com/"><img src="../images/logos/computerClub.png" height="120" width="120" /></a>
+<ol id="navbar-left">
+	<a href="#start"><h2 class="navbar-title">HTML</h2></a>
+	<br>
+	<a href="#start"><li>Getting Started</li></a>
+	<a href="#intro"><li>Intro</li>
+	<a href="#intro-tags"><h3 class="navbar-title">TAGS</h3></a>
+	<a href="#intro-tags"><li>Lists</li></a>
+	<a href="#type"><li>Typography</li></a>
+	<a href="#nonsematic"><li>Styling Tags</li></a>
+	<a href="#images&links"><li>Images &amp; Links</li></a>
+	<a href="#metaTags"><h3 class="navbar-title">Meta Tags</h3></a>
+
+</ol>
+</div>	
+</div>
+<!--Intro to Html and the tools that You'll need-->
+<div id="main-pg" style="float: right;width: 80%;">
+<a name="start"></a>
+	<h1>Learning HTML (HyperText Markup Language)</h1>
+	<hr>
+	<h1>Before We start</h1>
+	<p>I want to start by stating that you do not need to have any experiance with coding and that its supringly easy and quick to start</p>
+	<h1>We need tools!</h1>
+	<p>Just as you need tools to build a house, you need a text editor to interpret your code!</p>
+	<ol>
+	<h2>Code Editors (Intepreters)</h2>
+	<li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text 3</a> <small>*Recommended</small></li>
+	<li><a href="https://notepad-plus-plus.org/" target="_blank">NotePad++</a></li>
+	</ol>
+	<p style="font-size: 20px;">
+		HTML is the physical structure of the websites as we know them. You do not have to have prior
+		experaince with coding as its pretty straight foward and easy to understand.
+	</p>
+	<h2>How This guide Is structured</h2>
+	<ul>
+	<h4>SHOWS:</h4>
+		<li>Physical code</li>
+		<li>How the code outputs</li>
+		<li>Explains concepts and show examples of how there used</li>
+	</ul>
+
+<!--Introduces USER to structure and tags for HTMl-->
+<a name="intro"></a>
+	<hr>
+	<h1><b>Intro</b></h1>
+	<h3>HTML is built up of Tags</h3>
+	<p>
+		 &lt;tag&gt;Text here &lt;&#47;tag&gt;<br>
+		 The text goes in the middle of the tag<br>
+		Now Im going to introduce you to the Structure of HTMl
+	</p>
+	<pre>
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+				&lt;title&gt;Webpage Title&lt;&#47;title&gt;
+			&lt;&#47;head&gt;
+			&lt;body&gt;
+			&lt;!--This is where your code goes--&gt;
+			&lt;&#47;body&gt;
+			&lt;&#47;html&gt;
+	</pre>
+	<h3>Were going to put most of our code in the middle of the &lt;body&gt; tag</h3>
+	<pre>
+	<ol>
+	<h2>Tags and what they do!</h2>
+		<li><span class="tag">body</span><br>// The code that the USER see's on the moniter<br>The code that makes this website run is put in the middle of this tag</li>
+		<li><span class="tag">title</span> <br>// Text that is on the Tab of Webpage <br><img src="images/titleTag.jpg" height="300" width="500"></li>
+		<li><span class="tag">head</span><br> // This tag sends info to the browser and pulls info from the internet that you want. It also can store you styling sheet which makes your site much nicer looking</li>
+		<li><span class="tag">div</span><br><img src="images/format.png" height="300" width="400" />// This tag is used to break up your webpage into seperate pieces like header,main-content,footer</li>
+	</ol>
+	</pre>
+	<hr>
+	<a name="intro-tags"></a>
+	<h1><b>Begginer Tags</b></h1>
+	<h2><b>Here some tags &amp; what they do!</b></h2>
+	<pre>
+		<h3 class="tagIntro">Lists</h3>
+		<span class="tag">ol</span>
+			&lt;li&gt;Item 1 &lt;/li&gt;
+			&lt;li&gt; Item 2 &lt;/li&gt;
+			&lt;li&gt;Item 3 &lt;/li&gt;
+			&lt;li&gt; Item 4 &lt;/li&gt;
+		<span class="tag">/ol</span>
+
+		<h3>OR</h3>
+
+		<span class="tag">ul</span>
+			&lt;li&gt;Item 1 &lt;/li&gt;
+			&lt;li&gt; Item 2 &lt;/li&gt;
+			&lt;li&gt;Item 3 &lt;/li&gt;
+			&lt;li&gt; Item 4 &lt;/li&gt;
+		<span class="tag">/ul</span>
+
+		<div class="displays">
+			<span class="displays">Displays As</span>
+			<h2>OL lists or Numbered lists</h2>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+			</ol>
+			<h2>Ul lists or Bulleted lists</h2>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+			</ul>
+			<h4>Lists are commonly used in Navbars and great to lists out info!</h4>
+			<img src="images/tagLists.png"/>
+		</div>
+	</pre>
+	<hr>
+	<pre>
+		<!--Under are basic header tags-->
+		<a name="type"></a>
+		<h3 class="introTags"><b>Typography</b></h3>
+		<p>Typography is 90% of the interent and being able to use it corretly is critical to a good website!</p>
+		<aside><q>Less is more</q></aside>
+		<br>
+		<br>
+		<h2>Our Tags are: Largest to smallest <small>*Ol was used to make section under</small></h2>
+		<ol style="list-style:square;list-style-position: inside;float: left;width: 50%;font-size:25px;">
+			<h3>Header Text</h3>
+			<li>&lt;h1&gt;Text here&lt;/h1&gt;</li>
+			<li>&lt;h2&gt;Text here&lt;/h2&gt;</li>
+			<li>&lt;h3&gt;Text here&lt;/h3&gt;</li>
+			<li>&lt;h4&gt;Text here&lt;/h4&gt;</li>
+			<li>&lt;h5&gt;Text here&lt;/h5&gt;</li>
+			<li>&lt;h6&gt;Text here&lt;/h6&gt;</li>
+				<ul>
+					<h3>Paragraphs &amp; Formatting</h3>
+					<li>&lt;p&gt; <small>Creates a paragraph</small></li>
+					<li>&lt;article&gt; <small>Used to create formatting between long passages of text</small></li>
+					<li>&lt;section&gt; <small>Used inside of article to seperate it into sections</small></li>
+					<li>&lt;br&gt; <small>*No closing tags required</small></li>
+					<img src="images/format2.png" style="float: left;" />
+				</ul>
+		</ol>
+
+			<img style="float:right;margin:0 10% 0 0;" src="images/typeTag.jpg" />
+	</pre>
+	<br>
+	<!--Shows USER tags that they can use within tags to specifaclly tag-->
+	<a name="nonsematic"></a>
+	<pre>
+		<h2><b>Non-Sematic Tags</b></h2>
+		<p>All this means , is that you can put a tag within a tag and it will make sense to HTML. This is very common for HTML defualt
+		styling such as bolding text,italisiazing,stricking ext..</p>
+
+		<p>
+		<span class="tag">i</span>	or <span class="tag">em</span>
+		<small>This makes your text slanted and italisized</small>
+		&lt;p&gt;&lt;i&gt;Italisized text&lt;/i&gt;&lt;/p&gt;
+		</p>
+		<h3>Texts that is italisized vs Not</h3>
+		<p><small>IS</small> <i>Marcelo Escalante Herzog Javier Gonzalez Prado Santa Maria De Jesus</i></p>
+		<p><small>NOT</small> Marcelo Escalante Herzog Javier Gonzalez Prado Santa Maria De Jesus</p>
+		<p>
+		<span class="tag">b</span> or <span class="tag">strong</span>
+		</p>
+		<p>
+		<span class="tag">s</span> or <span class="tag">strike</span>
+		</p>
+		<p>
+			<span class="tag">span</span> 
+			<p>Span is used to select small snippets of text to style later.</p>
+			<h3><small>Ex.</small> This word should be <span style="color:red;">RED</span></h3>
+		</p>
+		<div class="displays">
+		<span class="displays">Common Uses</span>
+		<ol>
+			<h4><b>Shopping list</b></h4>
+			<li><i>Milk</i></li>
+			<li>Bread</li>
+			<li><s>Eggs</s></li>
+		</ol>
+		</div>
+	
+	</pre>
+	<!--Under goes intro to images and links-->
+	<a name="images&links"></a>
+	<pre>
+		<h1><b>Images &amp; Links</b></h1>
+		<p>Images and Links play a vital role in connecting the internet and making it that much more interesting</p>
+
+		<h2>All about Images</h2>
+		<span class="tag">img src="" /</span> <small>*Images don't need  a closing tag</small>
+		<p>Images can either be grabbed from the internet or Be taken from a file that you downloaded</p>
+		<ol>
+			<h4>Images Address VS Local File</h4>
+			<li><b>Local Files:</b> This is the best option as you can have the images locally on the server without fear of losing it <small>You can lose it if the image address is closed</small></li>
+			<li><b>Image Address:</b> Useful when your rushing or when you dont have to much space left on your local disk</li>
+		</ol>
+		<img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-07/10/15/campaign_images/webdr14/secrets-doggy-daycare-employees-will-never-tell-y-2-4088-1436557195-1_dblbig.jpg" alt="Images-using-address" />
+		<h2>Using <a href="https://merchantsupport.uservoice.com/knowledgebase/articles/274883-how-do-i-copy-an-image-url" target="_blank">Image address</a> Method</h2>
+		<h2>If your images is locally stored just put the location in the middle of src=""</h2>
+		<p>Ex:&lt;img src="myImage.jpg" /></p>
+		<p>Ex: &lt;a href="http://www.google.com/"&gt;Google&lt;/a&gt;</p>
+		<h2>The Value inside the href="" is the link it points to.<br><br> While the text in the middle of &lt;a&gt;Text here&lt;/a&gt; is what the user see's to click on!</h2>
+	</pre>
+	<!--Start Of metaTags and <head>-->
+	<a name="metaTags"></a>
+	<pre>
+		<h1>Meta Data</h1>
+		<p style="font-size:20px;">Meta Data Is usaully Put inside the &lt;head&gt; tag and is used to tell browsers like chrome,firefox,safari about your webpage. This
+		can Include the content of the Page, how you want USER's to find it and even how you want google's robot to scoure your webpage</p>
+		<br>
+		<h5>Here's a great link telling you more! <a href="http://blog.hubspot.com/insiders/how-to-write-a-meta-description" target="_blank">Meta Tags</a></h5>
+	</pre>
+
+<div style="position: relative;bottom: 0;">
+<ol>
+<h2>External Sources</h2>
+	<a href="https://www.codecademy.com" target="_blank"><li>CodeAcademy.com</li></a>
+	<a href="https://css-tricks.com/snippets/html/" target="_blank"><li>CSS-Tricks.com</li></a>
+	<a href="http://html.com/" target="_blank"><li>HTML.com</li></a>
+	<a href="http://stackoverflow.com/" target="_blank"><li>Stackoverflow</li></a>
+	<a href="http://www.w3schools.com/html/default.asp"><li>W3Schools</li> <small>*They set the rules &amp; regulations for the internet</small></a>
+</ol>
+<h1>Version 1.04</h1>
+<h3>Powered by: HPCODE &amp; Harshmellow <small>10/18/16</small></h3>
+<!--God i hate this , Im going to make a machine that takes over the world-->
+</div>
+</div>
+</body>
+</html>
