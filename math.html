@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"> <!--Disables zoom and ensures only scrolling w/ responsiveness-->
+<meta charset="utf-8">
+<style type="text/css">
+
+</style>
+<head>
+  <title>Harshmelow-Factoring Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="math.css">
+<style type="text/css">
+	div#front-cover{
+		background-image: url('images/backGray.jpg');
+		background-repeat:no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.tab-pane p{
+		font-size: 18px;
+		padding:6px;
+		width:80%;
+		margin: 0 auto;
+		text-align: left;
+		text-indent: 1.5em;
+
+	}
+</style>
+<script type="text/javascript">
+	window.alert('Page Is being Built');
+</script>
+</head>
+<body>
+
+<!--<div class="container">
+<header>
+	<nav>
+	<ul class="breadcrumb col-md-12 text-center">
+ 		<li><a href="harshmelow.com"></a> <span class="divider"></span></li>
+ 		<li><a href="tech.harshmelow.com">HPCODERS</a> <span class="divider"></span></li>
+ 		<li class="active">APUSH</li>
+	</ul>
+	</nav>
+</header>
+</div>-->
+<!--End of navbar-->
+<!--Start of tabs-->
+<div class="container">
+	<div class="row span2">
+		<div class="page-header">
+  			<h1 class="text-center">Learn To Factor  <small>By: Marcelo Javier Escalante Herzog Gonazalez</small></h1>
+		</div>
+		<!--Title over-->
+		<!--Under goes tabs that switch content-->
+		<div class="assignment text-center">
+			<div class="tabbable"> <!-- Only required for left/right tabs -->
+			<nav>
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#front-cover" data-toggle="tab">Front-Cover</a></li>
+				  <li><a href="#GCF" data-toggle="tab">GCF</a></li>
+				  <li><a href="#AC-method" data-toggle="tab">AC Method</a></li>
+				  <li><a href="#Grouping" data-toggle="tab">Factoring By Grouping</a></li>
+				   <li><a href="#Box-Method" data-toggle="tab">Box-Method</a></li>
+				    <li><a href="#diff-squares" data-toggle="tab">Difference of 2 Squares</a></li>
+				     <li><a href="#extra-example" data-toggle="tab">Repeat Example</a></li>
+				</ul>
+				<!--End of Tabs-List-->
+				</nav>
+				<div class="tab-content">
+					
+				 		<div class="tab-pane active" id="front-cover">
+				 		 	<h1 class="tab-title front-cover-title">Factoring Book Project</h1>
+				 		 	<img src="images/frontCoverbanner.png" />
+				 		</div>
+				 		<!--Start Of tab2-->
+				 		<div class="tab-pane" id="GCF">
+				 			<h3 class="tab-title">Greatest Common Factor</h3>
+				 			<p>Before you start trying to find the factor of your equation your going to need to find the
+				 			greatest common factor for the equation.
+				 			</p>
+				 				<table class="GCF" width="90%" cellpadding="4" cellspacing="15" style="display:block;margin:0 auto;font-size:20px;font-weight:bold;padding-top:10px;">
+				 				<thead>
+				 					<th>Examples:</th>
+				 				</thead>
+				 				<tbody>
+				 					<tr>
+				 						<td>(12a * 3a * 18b * 6ab)</td><td>/*Both 3 &amp; a are factors of all some/all the numbers which means we can take them out*/</td><td></td>
+				 					</tr>
+				 					<tr>
+				 						<td>Answer: 3a(4 * 1 * 18b * 2b)</td> <td>/*You can check to see if your answer is correct by distributing it out again!*/</td>
+				 					</tr>
+				 				</tbody>
+				 				</table>
+				 				<pre>
+				 				<h3>Step By Step</h3>
+				 					<ol style="list-style: none;">
+				 						<li>(12a * 3a * 18b * 6ab)</li>
+				 						<li>3a(3 * 1 * 18b * 2b)</li>
+				 						<li class="math">3a(3) + 3a(1) + 3a(2b) = (12a * 3a * 18b * 6ab)</li>
+				 						<!--<li class="nerd1">3a(3) && 3a(1) && 3a(2b) == (12a * 3a * 18b * 6ab) == true;
+				 						</li>-->
+				 					</ol>
+				 				</pre>
+				 				<button class="code" style="background-color:#a23;border-radius:25px;margin:0 auto;width:500px;height:auto;">Code</button>
+				 		</div>
+				 		<!--Start of tab3-->
+				 		<div class="tab-pane" id="AC-method">
+				 			<h1 class="tab-title">AC Method</h1>
+				 			<p>The AC method is used when a=1 ; This basically means that the term or exponent is 1 </p>
+				 			<table width="90%" cellpadding="4" cellspacing="10" style="display:block;margin:0 auto;font-size:20px;font-weight:bold;padding-top:10px;">
+				 				<thead>
+				 					<th>AC METHOD examples</th>
+				 				</thead>
+				 				<tbody>
+				 					<tr>
+				 						<td>x^2 + 8x + 12</td> <td>Just as we learned before we need to see if there is a GCF(false);</td>
+				 					</tr>
+				 					<tr>
+				 						<td>A*C = 12  <br>b = 8</td> 
+				 						<td>Next we need to find numbers that have products of (a,c)  &amp; sum to (b) </td>
+
+				 					</tr>
+				 					<tr>
+				 						<td>(x^2 + 6x) + (2x + 12)</td><td>Find the GCF's</td>
+				 					</tr>
+				 					<tr>
+				 						<td>x(x + 6) + 2(x + 6)</td><td>This is the answer once factored and the GCF's are found</td>
+				 					</tr>
+				 					<tr>
+				 						<td>(x + 2)(x + 6)</td><td>The Final Answer consists of two outside terms and repeating binomials</td>
+				 					</tr>
+				 					<tr>
+				 						<td>Check your Answer by Distributing</td>
+				 					</tr>
+				 				</tbody>
+				 			</table>
+				 		</div>	
+				 		<!--Start of tab4-->
+				 		<div class="tab-pane" id="Grouping">
+				 			<h1 class="tab-title">Grouping</h1>
+				 			<p>Factoring by Grouping is used when a<s>=</s>1. <br> Or in other terms when the term is not 1.</p>
+				 			<pre>
+				 				<h3 class="type">Step By Step</h3>
+				 				<ol>
+				 					<li>x^2 + 6x+ 8</li>
+				 					<li>(x^2 + 3x) + ( 2x + 8) <small>*Splits up B</small></li>
+				 					<li>Now you find the GCF</li>
+				 				</ol>
+				 			</pre>
+				 			
+				 		</div>
+				 		<!--Start of tab5-->
+				 		<div class="tab-pane" id="Box-Method">
+				 			<h1>Box-Method</h1>
+				 			<p>Mr.Lee's Favorite and For a reason. The box method is a neat trick that replaces grouping and allows the User to find the answer quickly</p>
+				 			<br>
+				 			<br>
+				 			<p>Box Method Example</p>
+				 			<p><small>Original Problem</small> <b>2x^2 + x - 6</b> </p>
+				 			<table cellspacing="5" cellpadding="5" width="50%" class="text-center boxMethodtable" style="font-size:20px;font-weight:bold;margin:0 auto;">
+				 			<div style="background-color:#fff;">
+				 				<img src="images/boxMethod2.gif" alt="Example-prob1" />
+				 				<img src="images/boxMethod1.gif" alt="Example-prob2" />
+				 			</div>
+				 				<tbody>
+				 					<tr>
+				 						<td></td><td class="tr-hide">2x</td><td class="tr-hide">-3</td>
+				 					</tr>
+				 					<tr>
+				 						<td class="tr-hide">x</td><td>2x^2</td><td>-3x</td>
+				 					</tr>
+				 					<tr>
+				 						 <td class="tr-hide">2</td><td>4x</td><td>-6</td>
+
+				 					</tr>
+				 				</tbody>
+				 			</table>
+				 			<pre class="type">
+				 				<h3 class="type">Step by Step</h3>
+				 				<ol>
+				 					<small>Quadrant are refering to Grid Plane</small>
+				 					<li>Take your A & C and put them in the 2st quadrant and 4th queadrant</li>
+				 					<li>Now you take the factors of the B term as you would in grouping</li>
+				 					<li>Put these in the First 2nd Quadrant & 3rd Quadra</li>
+				 				</ol>
+				 			</pre>
+				 			<h4><a href="http://seattlecentral.edu/faculty/alevy/Box_%20Method.pdf" target="_blank">Quick Explanation</a></h4>
+				 		</div>
+				 		<!--Start of tab6-->
+				 		 <div class="tab-pane" id="diff-squares">
+				 			<h1>Difference Of two Squares</h1>
+				 		</div>
+				 		<!--Start of tab7-->
+				 		<div class="tab-pane" id="extra-example">
+				 			<h1>Extra-Example</h1>
+				 		</div>
+				 	
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<footer class="col-md-12">
+		<small text-center><b><a href="http://www.harshmelow.com/" target="_blank">Harshmellow</a></b><i> Right Reserved 2015-2016</i></small>
+		<h6>Other Projects by Harshmellow: <a href="http://www.harshmelow.com/" target="_blank">Home</a>  <a href="http://www.hpcoders.com/" target="_blank">HPCODE</a></h6>
+	</footer>
+</div>
+<!--JQUERY CDN LINK-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--BOOTSRAP JSCRIPTED MINIFIED FILE-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="math.js"></script>
+</body>
+</html>

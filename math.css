@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+body{
+	font-family: 'Special Elite', cursive;
+	line-height: 1.65em !important;
+}
+::selection{
+	color: lime;
+	background-color: black;
+}
+/*FRONT COVER STYLING*/
+div#front-cover{
+	background-image: url('images/backBlue.jpg' )!important;
+	background-repeat: repeat;
+	font-family: 'Rock Salt', cursive;
+	border-radius: 10px;
+
+}
+pre{font-size:18px;font-weight:bold;}
+pre{
+	width:80%;
+	display: block;
+	margin:0 auto;
+	background:transparent;
+	border-color: #29E32F;
+	font-family: 'Special Elite', cursive;
+}
+div#AC-method,div#Grouping,div#diff-squares,div#Box-Method,div#extra-example,div#GCF{
+	background-image: url('images/backGray.jpg');
+	background-size: cover;
+	border-radius: 10px;
+}
+.boxMethodimg{background-color: #fff;position: absolute;bottom: 0;}
+.boxMethodimg img{
+	display: inline-block;
+}
+.boxMethodtable tr,.boxMethodtable td{
+	border:solid black 2px;
+}
+td.tr-hide{border:none;font-size:24px;font-weight:bolder;}
+.boxMethodtable thead{border:none;}
+.front-cover-title{padding:100px 0 1em 0;}
+/*End of Front-Cover Styling*/
+/*Tab Styling*/
+ul.nav-tabs li:hover{
+	border-bottom:solid 2px #a23;
+}
+ul.nav-tabs li > a:hover{
+	background-color:#E9A82F !important;
+	transition:2s;
+}
+ul.nav-tabs li > a{
+	font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+}
+ul.nav-tabs li{
+	width: 14.2856%;
+	height: 100%;
+}
+a,a:hover{
+		text-decoration: none !important;
+}
+footer{position: absolute;bottom: 0;}
+/*END Tab styling*/
+/*Global Tab Styling*/
+.tab-title{
+	font-size: 28px;
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+	border-bottom: solid 2px #a23;
+	padding:1.25em 0;
+}
+div.tab-pane{color: #fff;min-height:900px;height: 100%;}
+/*End of Global Tab Styling*/
