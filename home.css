@@ -38,6 +38,7 @@
       color: #818181;
       overflow-x: hidden;
   }
+  .navbar-collapse a:hover{transition: .6s;border-bottom:solid #a23 4px;}
   /*Styling for Member Classes*/
   .panel-body,div.panel-footer{
       background-color: #fafafa !important;
@@ -239,7 +240,15 @@
     list-style: none;
 
   }
-
+  ol.footer-links{
+    list-style:none;
+    list-style-position:inside;
+    margin: 0;
+    padding:10px;
+  }
+  ol.footer-links li{
+    padding:7px 0;
+  }
   /*==========================================================Projects.html CSS styling under*/
   div.current img{
     max-width:128px;
